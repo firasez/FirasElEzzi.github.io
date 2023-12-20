@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+   
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Firas El-Ezzi</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap">
+
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">My Page</a>
+
+        <nav class="navbar">
+            <a href="#" onclick="openPopup()">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+            
+        <div class="Home-Content">
+            <h1>Firas El-Ezzi</h1>
+            <h3>Software Engineer</h3>
+            
+            <div class="home-sci">
+                <a href="https://github.com/firasez"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/firas-el-ezzi-661b90250/"><i class='bx bxl-linkedin-square' ></i></a>
+            </div>
+
+            <a href="pdf.pdf" class="btn">Download CV</a>
+
+            <div id="contactPopup" class="popup">
+                <div class="popup-content">
+                    <span class="close-popup" onclick="closePopup()">&times;</span>
+                    <h2>Contact Information</h2>
+                    <p>Email: firaselezzi1@gmail.com</p>
+                    <p>Phone: +1 (873) 355 5948</p>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+    <script>
+        function openPopup() {
+            document.getElementById("contactPopup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("contactPopup").style.display = "none";
+        }
+</script>
+
+    
+</body>
+</html>
